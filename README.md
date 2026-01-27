@@ -1,27 +1,38 @@
 # AI‑Powered ETL Pipeline for Personalized Marketing Messages
 
-This project demonstrates a complete ETL (Extract, Transform, Load) pipeline using Python, Pandas, and the OpenAI API.  
-It loads customer data from a CSV file, masks sensitive information, generates personalized marketing messages using AI, and exports the results into a new CSV file.
-This project began as a bootcamp exercise and was expanded significantly into a full AI‑powered ETL pipeline, including data masking, error handling, and automated message generation.
+## 📌 Overview
+This project demonstrates a complete **ETL (Extract, Transform, Load) pipeline** built with Python and Pandas, enhanced with AI-generated personalized marketing messages.
+
+It simulates a real-world data workflow used in marketing analytics, including data extraction from CSV files, data masking for privacy, transformation logic, AI integration, and structured output generation.
+
+Originally developed as a bootcamp exercise, the project was expanded into a professional portfolio project with improved structure, validation, and automation.
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Project Objectives
+- Build an end-to-end ETL pipeline using Python and Pandas
+- Apply data cleaning, validation, and masking techniques
+- Integrate AI to generate personalized marketing messages
+- Simulate real-world data engineering and analytics workflows
+- Export enriched data into a structured output file
 
-This project simulates a real-world data workflow used in marketing analytics:
+---
 
-1. **Extract**  
-   - Load customer data from a CSV file  
-   - Convert it into a structured dictionary format  
+## 🔄 ETL Workflow
 
-2. **Transform**  
-   - Mask sensitive fields (account numbers, card numbers)  
-   - Use the OpenAI API to generate personalized marketing messages  
-   - Handle errors gracefully  
+### 1️⃣ Extract
+- Load customer data from a CSV file
+- Convert data into structured Python objects
 
-3. **Load**  
-   - Save the enriched dataset into a new CSV file  
-   - Ensure only valid rows are exported  
+### 2️⃣ Transform
+- Mask sensitive information (e.g., account and card numbers)
+- Validate and clean data
+- Generate personalized marketing messages using an AI API
+- Handle errors and invalid records gracefully
+
+### 3️⃣ Load
+- Export the processed data into a new CSV file
+- Ensure only valid and enriched records are saved
 
 ---
 
@@ -29,7 +40,7 @@ This project simulates a real-world data workflow used in marketing analytics:
 
 - Python  
 - Pandas  
-- OpenAI API  
+- OpenAI API (AI message generation)
 - Jupyter Notebook  
 - GitHub  
 
@@ -50,45 +61,76 @@ flowchart TD
 
 ## 📁 Project Structure
 
-```
-├── clients.csv
-├── marketing_messages.csv
-├── etl_script.py
-├── etl_notebook.ipynb
-└── README.md
+```text
+AI_marketing_ETL_pipeline/
+│── data/
+│   └── clients.csv
+│
+│── notebooks/
+│   └── etl_notebook.ipynb
+│
+│── src/
+│   └── etl_script.py
+│
+│── output/
+│   └── marketing_messages.csv
+│
+│── README.md
+│── requirements.txt
 ```
 
 ---
 
-## 🧪 How to Run
+## 🧪 How to Run the Project
 
 1. Install dependencies:
    ```
-   pip install pandas openai
+   pip install -r requirements.txt
    ```
 
 2. Add your OpenAI API key in the script.
 
-3. Run the ETL script:
+   Add your OpenAI API key in the script or as an environment variable.
+   
+4. Run the ETL script:
    ```
-   python etl_script.py
+   python src/etl_script.py
    ```
 
-4. The output file `marketing_messages.csv` will be generated.
+5. Output
+
+   The generated file will be saved in:
+   ```
+   output/marketing_messages.csv
+   ```
 
 ---
 
-## 🎯 What I Learned
+## 📊 Example Use Cases
 
-- Building a full ETL pipeline  
-- Masking sensitive data  
-- Integrating AI into data workflows  
-- Error handling and data validation  
-- Preparing a project for a professional portfolio  
+- Marketing analytics and personalization
+- Data engineering pipelines
+- Data quality and privacy simulations 
+- AI integration in data workflows 
 
 ---
 
-## 📬 Contact
+## 🎯 Key Learnings
 
-Created by **Amanda**  
-Let’s connect on [LinkedIn](https://www.linkedin.com/in/amandabat/)
+- Designing scalable ETL pipelines 
+- Data cleaning, validation, and masking
+- AI integration in analytics workflows 
+- Error handling and automation  
+- Structuring projects for professional portfolios
+
+---
+
+## 👩‍💻 Author
+
+**Amanda Batista**
+
+Junior Data Analyst focused on Python, SQL, Excel, and Power BI.
+
+LinkedIn: https://www.linkedin.com/in/amandabat
+
+GitHub: https://github.com/amandajbatista7-design
