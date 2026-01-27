@@ -2,7 +2,7 @@ import pandas as pd
 from openai import OpenAI
 
 #Extract the csv file
-df = pd.read_csv('clients.csv')
+df = pd.read_csv('data/clients.csv')
 
 #Turn into a dictionary
 data = df.to_dict(orient='records')
@@ -69,4 +69,4 @@ for user in valid_rows:
     })
 
 df_out = pd.DataFrame(output_rows)
-df_out.to_csv("marketing_messages.csv", index=False, encoding="utf-8")
+df_out.to_csv("output/marketing_messages.csv", index=False, encoding="utf-8")
