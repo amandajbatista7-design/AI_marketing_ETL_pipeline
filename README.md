@@ -129,7 +129,7 @@ AI_marketing_ETL_pipeline/
 
 **Amanda Batista**
 
-Junior Data Analyst focused on Python, SQL, Excel, and Power BI.
+Data Analyst focused on Python, SQL, Excel, and Power BI.
 
 LinkedIn: https://www.linkedin.com/in/amandabat
 
